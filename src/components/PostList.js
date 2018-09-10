@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Post from './Post';
-//import data from './data.json';
+import '../style/PostList.css';
 
 class PostList extends Component {
     constructor(props) {
@@ -30,13 +30,19 @@ class PostList extends Component {
         if(postList.length > 0) {
         postListBlock = postList.map( obj => {
             return (
-            <Post onSelect={this.props.onSelect} key={obj.id} id={obj.data.id} imgPath={obj.data.thumbnail} title={obj.data.title} />
+                <Post onSelect={this.props.onSelect} 
+                    key={obj.id} id={obj.data.id} 
+                    imgPath={obj.data.thumbnail} 
+                    title={obj.data.title} 
+                    voted={obj.data.ups} 
+                    comments={obj.data.num_comments}
+                    created={obj.data.created_utc} />
                 )
         })
         }
 
         return(
-        <div className="col-4">
+        <div className="PostList scroll col-4">
             {postListBlock}
         </div>
         )
