@@ -1,0 +1,8 @@
+.Post {
+  text-align: left;
+  border: 1px solid lightgrey;
+}
+
+.Post h1 {
+  font-size: 13px
+}
