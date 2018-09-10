@@ -36,7 +36,8 @@ class PostList extends Component {
                     title={obj.data.title} 
                     voted={obj.data.ups} 
                     comments={obj.data.num_comments}
-                    created={obj.data.created_utc} />
+                    created={obj.data.created_utc}
+                    author={obj.data.author} />
                 )
         })
         }

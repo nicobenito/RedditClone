@@ -29,14 +29,18 @@ class Post extends Component {
     render() {
         return (
         <div className={this.state.removed ? 'hiddenPost' : 'Post'} onClick={this.selectPost}>
-            <div>
-                <span className={this.state.visited ? 'visited' : 'notVisited'}>Viewed</span>
-                <h1>{this.props.title}</h1>
-                <img src={this.props.imgPath}></img>
-                <h3>Voted: {this.props.voted}</h3>
-                <h3>{this.props.comments} comments</h3>
-                <span>Added {this.props.created} hours ago</span>
-                <button onClick={this.dismissPost}> Dismiss post </button>
+            <div div className="row">
+                <span className={this.state.visited ? 'visited col-1' : 'notVisited col-1'} ></span>
+                <div div className="col-10">
+                    <span>Added {this.props.created} hours ago by {this.props.author}</span>
+                    <h1>{this.props.title}</h1>
+                    <img src={this.props.imgPath}></img>
+                    <div className="row">
+                        <h3 className="col-3">Voted: {this.props.voted}</h3>
+                        <h3 className="col-5">{this.props.comments} comments</h3>
+                    </div>
+                    <button className="btn btn-danger col-12" onClick={this.dismissPost}> Dismiss post </button>
+                </div>
             </div>
         </div>
         );

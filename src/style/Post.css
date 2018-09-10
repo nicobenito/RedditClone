@@ -1,20 +1,36 @@
 .Post {
   text-align: left;
-  border: 1px solid lightgrey;
+  border: 1px solid #9ad3de;
+  padding: 5px 15px;
+  background: #c9c9c9;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  color:white;
 }
 
 .hiddenPost {
-  display: none
+  display: none;
+}
+
+.Post img {
+  margin: 5px 0px;
 }
 
 .Post h1 {
-  font-size: 13px
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid;
+}
+
+.Post h3 {
+  font-size: 14px;
 }
 
 .Post .notVisited {
-  visibility: hidden
+  visibility: hidden;
 }
 
 .Post .visited {
-  visibility: visible
+  visibility: visible;
+  background: #89bdd3;
 }
