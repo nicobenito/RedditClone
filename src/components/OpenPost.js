@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PostList from './PostList';
 //import '../style/App.css';
 
 class OpenPost extends Component {
@@ -6,7 +7,7 @@ class OpenPost extends Component {
     return (
       <div className="OpenPost">
         <div>
-            
+            <PostList />
         </div>
       </div>
     );

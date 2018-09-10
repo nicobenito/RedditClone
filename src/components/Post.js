@@ -5,7 +5,8 @@ class Post extends Component {
     return (
       <div className="Post">
         <div>
-            
+            <h1>{this.props.title}</h1>
+            <img src={this.props.imgPath}></img>
         </div>
       </div>
     );
