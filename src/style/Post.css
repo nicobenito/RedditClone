@@ -3,6 +3,18 @@
   border: 1px solid lightgrey;
 }
 
+.hiddenPost {
+  display: none
+}
+
 .Post h1 {
   font-size: 13px
+}
+
+.Post .notVisited {
+  visibility: hidden
+}
+
+.Post .visited {
+  visibility: visible
 }
